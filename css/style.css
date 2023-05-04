@@ -1,0 +1,52 @@
+body {
+	background-color: #333;
+}
+
+header nav {
+	background-color: #333;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	float: none;
+  	position:absolute;
+  	right: 50%;
+  	left: 3	0%;
+  	transform: translate(-50%, -50%);	
+}
+
+h1 {
+	background-color: #333;
+	font-family: Arial, sans-serif;
+	color: #fff;
+	text-align: center;
+}
+
+header nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+header nav li {
+	margin: 0 10px;
+}
+
+header nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+header nav a:hover {
+	background-color: #fff;
+	color: #333;
+}
+
+@media only screen and (max-width:  600px) {
+	header nav ul {
+		flex-direction: column;
+	}
+
+	header nav li {
+		margin: 10px 0;
+	}
+}

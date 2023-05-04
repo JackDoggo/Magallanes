@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Gallery</title>
+	<link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+			</ul>
+		</nav>
+		<h1>Image Gallery</h1>
+	</header>
+	<main>
+		<div class="gallery">
+			<img src="img/img1.jpg" alt="Image 1" onclick="openModal('img/img1.jpg')">
+			<img src="img/img2.jpg" alt="Image 2" onclick="openModal('img/img2.jpg')">
+			<img src="img/img3.jpg" alt="Image 3" onclick="openModal('img/img3.jpg')">
+			<img src="img/img4.jpg" alt="Image 4" onclick="openModal('img/img4.jpg')">
+		</div>
+		<div class="modal" id="modal">
+			<span class="close" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+				<img id="modal-img">
+			</div>
+		</div>
+	</main>
+	<footer>
+		<p>&copy; 2023 Image Gallery</p>
+	</footer>
+	<script>
+		function openModal(img) {
+			document.getElementById("Modal").style.display = "block";
+			document.getElementById("Modal-img").src = img;
+		}
+
+		function closeModal() {
+			document.getElementById("Modal").style.display = "none";
+		}
+	</script>
+</body>
+</html>
